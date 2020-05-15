@@ -33,7 +33,7 @@ class RegisterForm extends Form {
     const post = await axios.post('http://localhost:5000/api/blogService/user',register);
     console.log(post);
     alert("Registered Successfully")
-    window.location="/"
+    window.location="/login"
   }
   catch(ex){
     alert(ex.response.data);

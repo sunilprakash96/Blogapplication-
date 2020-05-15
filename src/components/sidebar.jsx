@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { bubble as Menu } from 'react-burger-menu';
+import { Link } from "react-router-dom";
+import '../css/sideBar.css';
 
 class Sidebar extends Component {
 
@@ -7,17 +9,8 @@ class Sidebar extends Component {
         return (
             <div>
                 <Menu>
-                    <a className="menu-item" href="/">
-                        Home
-      </a>
-
-                    <a className="menu-item" href="/laravel">
-                        Dashboard
-      </a>
-
-                    <a className="menu-item" href="/angular">
-                        ManagePosts
-      </a>
+                    <Link to="/Dashboard">Dashboard</Link>
+                    <Link to="/manageposts">ManagePosts</Link>
                 </Menu>
             </div>
         );
